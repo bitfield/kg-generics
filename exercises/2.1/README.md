@@ -51,4 +51,4 @@ If you get stuck, you can take a look at my suggested answer in [Solution 2.1](.
 
 ---
 
-[Index](../../) - [Next](../2.2/)
+[Index](../../README.md) - [Next](../2.2/README.md)

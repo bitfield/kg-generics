@@ -14,3 +14,5 @@ This repository contains exercises, solutions, and code samples from the book [K
 
 1. [Stringy beans](exercises/3.1/README.md)
 2. [Pointy-haired boss](exercises/3.2/README.md)
+3. [A first approximation](exercises/3.3/README.md)
+4. [Greater love](exercises/3.4/README.md)

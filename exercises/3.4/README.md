@@ -1,7 +1,5 @@
 # Exercise 3.4: Greater love
 
-Your turn now to see if you can solve [Exercise 3.4](https://github.com/bitfield/kg-generics/blob/main/exercises/3.4).
-
 You've been given the following (incomplete) function:
 
 ```go

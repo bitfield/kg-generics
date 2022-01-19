@@ -16,4 +16,4 @@ If you'd like some clues, have a look at [Solution 3.3](../../solutions/3.3/inti
 
 ---
 
-[Index](../../README.md) - [Next](../3.4/README.md)
+[Index](../../README.md) - [Next](../3.4/)

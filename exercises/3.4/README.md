@@ -20,4 +20,4 @@ You can check your answer against [Solution 3.4](https://github.com/bitfield/kg-
 
 ---
 
-[Index](../../README.md) - [Next](../4.1/README.md)
+[Index](../../README.md) - [Next](../4.1/)

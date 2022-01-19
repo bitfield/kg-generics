@@ -19,4 +19,4 @@ If you get stuck, have a look at [Solution 2.2](../../solutions/2.2/group.go).
 
 ---
 
-[Index](../../README.md) - [Next](../2.3/README.md)
+[Index](../../README.md) - [Next](../2.3/)

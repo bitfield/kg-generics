@@ -10,4 +10,4 @@ If you'd like some clues, have a look at [Solution 3.2](../../solutions/3.2/poin
 
 ---
 
-[Index](../../README.md) - [Next](../3.3/README.md)
+[Index](../../README.md) - [Next](../3.3/)

@@ -6,4 +6,4 @@ Have fun, and if you run into difficulties, check out [Solution 2.3](../../solut
 
 ---
 
-[Index](../../README.md) - [Next](../3.1/README.md)
+[Index](../../README.md) - [Next](../3.1/)

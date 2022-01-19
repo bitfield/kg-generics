@@ -8,4 +8,4 @@ If you're not sure what to do, peek at [Solution 3.1](../../solutions/3.1/string
 
 ---
 
-[Index](../../README.md) - [Next](../3.2/README.md)
+[Index](../../README.md) - [Next](../3.2/)

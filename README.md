@@ -20,3 +20,8 @@ There are no exercises for this chapter. You can relax!
 2. [Pointy-haired boss](exercises/3.2/)
 3. [A first approximation](exercises/3.3/)
 4. [Greater love](exercises/3.4/)
+
+## 4. Operations
+
+1. [Product placement](exercises/4.1/)
+2. [Duplicate keys](exercises/4.2/)

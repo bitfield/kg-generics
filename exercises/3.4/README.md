@@ -3,7 +3,7 @@
 You've been given the following (incomplete) function:
 
 ```go
-func IsGreater[T /* Your constraint goes here! */ }](x, y T) bool {
+func IsGreater[T /* Your constraint goes here! */](x, y T) bool {
 	return x.Greater(y)
 }
 ```
@@ -14,7 +14,7 @@ The tests exercise this function by calling it with two values of a defined type
 
 Can you see what to do?
 
-You can check your answer against [Solution 3.4](https://github.com/bitfield/kg-generics/blob/main/solutions/3.4/greater.go).
+You can check your answer against [Solution 3.4](../../3.4/greater.go).
 
 ---
 

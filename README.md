@@ -32,6 +32,8 @@ There are no exercises for this chapter. You can relax!
 
 ## 6. Functions
 
+1. [Compose yourself](exercises/6.1/)
+
 ## 7. Containers
 
 1. [Stack overflow](exercises/7.1/)

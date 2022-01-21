@@ -10,7 +10,7 @@ fmt.Println(s.Empty())
 // false
 ```
 
-See [Solution 5.1](../../solutions/5.1/empty.go) if you'd like something to compare with your answer.
+See [Solution 5.1](../../solutions/5.1/sequence.go) if you'd like something to compare with your answer.
 
 ---
 

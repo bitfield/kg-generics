@@ -25,3 +25,17 @@ There are no exercises for this chapter. You can relax!
 
 1. [Product placement](exercises/4.1/)
 2. [Duplicate keys](exercises/4.2/)
+
+## 5. Types
+
+1. [Empty promises](exercises/5.1/)
+
+## 6. Functions
+
+## 7. Containers
+
+1. [Stack overflow](exercises/7.1/)
+
+## 8. Concurrency
+
+1. [Channelling frustration](exercises/8.1/)

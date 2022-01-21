@@ -1,4 +1,4 @@
-module empty
+module sequence
 
 go 1.18
 

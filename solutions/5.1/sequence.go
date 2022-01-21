@@ -1,4 +1,4 @@
-package empty
+package sequence
 
 type Sequence[E any] []E
 

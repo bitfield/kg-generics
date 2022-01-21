@@ -1,13 +1,13 @@
-package empty_test
+package sequence_test
 
 import (
-	"empty"
+	"sequence"
 	"testing"
 )
 
 func TestEmptyTrue(t *testing.T) {
 	t.Parallel()
-	s := empty.Sequence[int]{}
+	s := sequence.Sequence[int]{}
 	got := s.Empty()
 	if !got {
 		t.Fatal("false for empty sequence")
@@ -16,7 +16,7 @@ func TestEmptyTrue(t *testing.T) {
 
 func TestEmptyFalse(t *testing.T) {
 	t.Parallel()
-	s := empty.Sequence[string]{"a", "b", "c"}
+	s := sequence.Sequence[string]{"a", "b", "c"}
 	got := s.Empty()
 	if got {
 		t.Fatal("true for non-empty sequence")

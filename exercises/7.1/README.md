@@ -30,4 +30,4 @@ If you'd like some hints, check out [Solution 7.1](../../solutions/7.1/stack.go)
 
 ---
 
-[Index](../../README.md)
+[Index](../../README.md) - [Next](../8.1/)

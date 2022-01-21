@@ -14,4 +14,4 @@ See [Solution 5.1](../../solutions/5.1/empty.go) if you'd like something to comp
 
 ---
 
-[Index](../../README.md) - [Next](../5.2/)
+[Index](../../README.md) - [Next](../6.1/)

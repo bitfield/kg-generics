@@ -2,6 +2,7 @@ package billable_test
 
 import (
 	"billable"
+	"sync"
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
@@ -42,5 +43,33 @@ func TestReceives(t *testing.T) {
 	got := c.Receives()
 	if want != got {
 		t.Fatalf("want 2 receives, got %d", got)
+	}
+}
+
+func TestConcurrencySafety(t *testing.T) {
+	t.Parallel()
+	c := billable.NewChannel[string](10)
+	want := 100
+	var wg sync.WaitGroup
+	wg.Add(1)
+	go func() {
+		for i := 0; i < want; i++ {
+			c.Send("hello")
+			_ = c.Receives()
+		}
+		wg.Done()
+	}()
+	for i := 0; i < want; i++ {
+		_ = c.Receive()
+		_ = c.Sends()
+	}
+	wg.Wait()
+	got := c.Sends()
+	if want != got {
+		t.Errorf("want %d sends, got %d", want, got)
+	}
+	got = c.Receives()
+	if want != got {
+		t.Errorf("want %d receives, got %d", want, got)
 	}
 }

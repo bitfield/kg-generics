@@ -1,4 +1,4 @@
-# Exercise 5.2: Channelling frustration
+# Exercise 8.1: Channelling frustration
 
 It seems people have been using channels in Go a little too freely, and a scheme is now proposed to bill users by activity. Accordingly, you'll need to define a generic `Channel` type with suitable instrumentation to track the number of sends and receives.
 
@@ -22,10 +22,12 @@ fmt.Println(c.Receives())
 // 1
 ```
 
-It is expected that the introduction of charges will discourage the use of channels altogether, so you don't need to worry about concurrency safety for this exercise. We'll return to that topic later in this book.
+You'll need to ensure that your `Channel` is concurrency-safe, so make sure your solution passes the tests when the race detector is enabled:
 
-See [Solution 5.2](../../solutions/5.2/billable.go) if you'd like something to compare with your answer.
+**`go test -race`**
+
+See [Solution 8.1](../../solutions/8.1/billable.go) if you'd like something to compare with your answer.
 
 ---
 
-[Index](../../README.md) - [Next](../6.1/)
+[Index](../../README.md) - [Next](../9.1/)

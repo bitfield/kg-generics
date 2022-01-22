@@ -9,7 +9,7 @@ For example:
 ```go
 m1 := map[int]bool{ 1: true }
 m2 := map[int]bool{ 2: true }
-fmt.Println(Merge(m1, m2)
+fmt.Println(Merge(m1, m2))
 // map[1:true 2:true]
 ```
 
@@ -18,7 +18,7 @@ If there are any conflicts (that is, if the maps have any key in common), then t
 ```go
 m1 := map[int]bool{ 1: false }
 m2 := map[int]bool{ 1: true }
-fmt.Println(Merge(m1, m2)
+fmt.Println(Merge(m1, m2))
 // map[1:true]
 ```
 

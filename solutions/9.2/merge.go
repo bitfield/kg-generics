@@ -2,10 +2,10 @@ package merge
 
 import "golang.org/x/exp/maps"
 
-func Merge[K comparable, V any](ms ...map[K]V) map[K]V {
-	result := map[K]V{}
+func Merge[M ~map[K]V, K comparable, V any](ms ...M) M {
+	result := M{}
 	for _, m := range ms {
-		maps.Copy(result, m)
+		maps.Copy[map[K]V](result, m)
 	}
 	return result
 }

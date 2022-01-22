@@ -1,4 +1,4 @@
-module funcmap
+module compose
 
 go 1.18
 

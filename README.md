@@ -41,3 +41,12 @@ There are no exercises for this chapter. You can relax!
 ## 8. Concurrency
 
 1. [Channelling frustration](exercises/8.1/)
+
+## 9. Libraries
+
+1. [Contain your excitement](exercises/9.1/)
+2. [Merging in turn](exercises/9.2/)
+
+## 10. Questions
+
+There are no exercises for this chapter. Why not enjoy a refreshing cup of tea?

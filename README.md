@@ -32,7 +32,8 @@ There are no exercises for this chapter. You can relax!
 
 ## 6. Functions
 
-1. [Compose yourself](exercises/6.1/)
+1. [Func to funky](exercises/6.1/)
+2. [Compose yourself](exercises/6.2/)
 
 ## 7. Containers
 

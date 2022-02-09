@@ -10,6 +10,8 @@ There are no exercises for this chapter. You can relax!
 
 ## 2. Type parameters
 
+[Read an online version of the chapter](https://bitfieldconsulting.com/golang/type-parameters)
+
 1. [Hello, generics](exercises/2.1/)
 2. [Group therapy](exercises/2.2/)
 3. [Lengthy proceedings](exercises/2.3/)

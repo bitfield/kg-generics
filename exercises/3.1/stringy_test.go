@@ -14,7 +14,7 @@ func (greeting) String() string {
 	return "Howdy!"
 }
 
-func TestStringifyTo(t *testing.T) {
+func TestStringifyTo_PrintsResultOfStringMethodToSuppliedWriter(t *testing.T) {
 	t.Parallel()
 	buf := &bytes.Buffer{}
 	stringy.StringifyTo[greeting](buf, greeting{})

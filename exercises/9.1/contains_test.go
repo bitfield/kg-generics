@@ -10,7 +10,7 @@ func positive(p int) bool {
 	return p > 0
 }
 
-func TestContainsFuncTrue(t *testing.T) {
+func TestContainsFunc_IsTrueForPositiveOnInputContainingPositiveInts(t *testing.T) {
 	t.Parallel()
 	input := []int{-2, 0, 1, -1, 5}
 	got := contains.ContainsFunc(input, positive)
@@ -19,7 +19,7 @@ func TestContainsFuncTrue(t *testing.T) {
 	}
 }
 
-func TestContainsFuncFalse(t *testing.T) {
+func TestContainsFunc_IsFalseForIsUpperOnInputContainingNoUppercaseRunes(t *testing.T) {
 	t.Parallel()
 	input := []rune("hello")
 	got := contains.ContainsFunc(input, unicode.IsUpper)

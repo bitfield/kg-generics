@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestEmptyTrue(t *testing.T) {
+func TestEmptyIsTrueForEmptySequence(t *testing.T) {
 	t.Parallel()
 	s := sequence.Sequence[int]{}
 	got := s.Empty()
@@ -14,7 +14,7 @@ func TestEmptyTrue(t *testing.T) {
 	}
 }
 
-func TestEmptyFalse(t *testing.T) {
+func TestEmptyIsFalseForNonEmptySequence(t *testing.T) {
 	t.Parallel()
 	s := sequence.Sequence[string]{"a", "b", "c"}
 	got := s.Empty()

@@ -7,7 +7,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 )
 
-func TestGroup(t *testing.T) {
+func TestGroupContainsWhatIsAppendedToIt(t *testing.T) {
 	t.Parallel()
 	got := group.Group[string]{}
 	got = append(got, "hello")

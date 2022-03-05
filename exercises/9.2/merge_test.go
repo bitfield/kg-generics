@@ -7,7 +7,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 )
 
-func TestMergeInts(t *testing.T) {
+func TestMergeCorrectlyMergesTwoMapsOfIntToBool(t *testing.T) {
 	t.Parallel()
 	inputs := []map[int]bool{
 		{
@@ -32,7 +32,7 @@ func TestMergeInts(t *testing.T) {
 	}
 }
 
-func TestMergeStrings(t *testing.T) {
+func TestMergeCorrectlyMergesThreeMapsOfStringToAny(t *testing.T) {
 	t.Parallel()
 	inputs := []map[string]any{
 		{

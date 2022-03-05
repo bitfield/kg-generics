@@ -3,7 +3,7 @@
 This time, you'll need to define a generic slice type `Group[E]` to pass the following test:
 
 ```go
-func TestGroup(t *testing.T) {
+func TestGroupContainsWhatIsAppendedToIt(t *testing.T) {
 	t.Parallel()
 	got := group.Group[string]{}
 	got = append(got, "hello")

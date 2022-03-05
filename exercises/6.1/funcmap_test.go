@@ -8,7 +8,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 )
 
-func TestFuncMapIntInt(t *testing.T) {
+func TestFuncMap_AppliesDoubleTo2AndReturns4(t *testing.T) {
 	t.Parallel()
 	fm := funcmap.FuncMap[int, int]{
 		"double": func(i int) int {
@@ -25,7 +25,7 @@ func TestFuncMapIntInt(t *testing.T) {
 	}
 }
 
-func TestFuncMapRuneBool(t *testing.T) {
+func TestFuncMap_AppliesUpperToUppercaseInputAndReturnsTrue(t *testing.T) {
 	t.Parallel()
 	fm := funcmap.FuncMap[rune, bool]{
 		"upper": unicode.IsUpper,

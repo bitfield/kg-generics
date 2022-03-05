@@ -5,7 +5,7 @@ It's time to write your first generic function in Go!
 Take a look at the [`print_test.go`](print_test.go) file in this folder. You'll find the following test:
 
 ```go
-func TestPrintAnythingTo(t *testing.T) {
+func TestPrintAnythingTo_PrintsInputToSuppliedWriter(t *testing.T) {
 	t.Parallel()
 	buf := &bytes.Buffer{}
 	print.PrintAnythingTo[string](buf, "Hello, world")

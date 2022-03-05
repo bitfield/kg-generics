@@ -7,7 +7,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 )
 
-func TestDupesTrue(t *testing.T) {
+func TestDupesIsTrueWhenInputContainsNonConsecutiveDuplicates(t *testing.T) {
 	t.Parallel()
 	s := []int{1, 2, 3, 1, 5}
 	want := true
@@ -17,7 +17,7 @@ func TestDupesTrue(t *testing.T) {
 	}
 }
 
-func TestDupesFalse(t *testing.T) {
+func TestDupesIsFalseWhenInputContainsNoDuplicates(t *testing.T) {
 	t.Parallel()
 	s := []string{"a"}
 	want := false

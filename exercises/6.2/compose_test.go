@@ -16,7 +16,7 @@ func next(p int) int {
 	return p + 1
 }
 
-func TestComposeInt(t *testing.T) {
+func TestComposeAppliesFuncsToIntInReverseOrder(t *testing.T) {
 	t.Parallel()
 	odd := compose.Compose(isOdd, next, 1)
 	if odd {
@@ -24,7 +24,7 @@ func TestComposeInt(t *testing.T) {
 	}
 }
 
-func TestComposeString(t *testing.T) {
+func TestComposeAppliesFuncsToStringInReverseOrder(t *testing.T) {
 	t.Parallel()
 	input := "HeLlO, wOrLd"
 	want := "hello, world"
@@ -42,7 +42,7 @@ func last[E any](s []E) E {
 	return s[len(s)-1]
 }
 
-func TestComposeLastThenFirst(t *testing.T) {
+func TestComposeAppliesFuncsToSliceInReverseOrder(t *testing.T) {
 	t.Parallel()
 	input := [][]int{{1, 2, 3}}
 	want := 1
@@ -52,7 +52,7 @@ func TestComposeLastThenFirst(t *testing.T) {
 	}
 }
 
-func TestComposeFirstThenLast(t *testing.T) {
+func TestComposeAppliesFuncsToSliceInReverseOrder2(t *testing.T) {
 	t.Parallel()
 	input := [][]int{{1, 2, 3}}
 	want := 3

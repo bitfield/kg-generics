@@ -7,7 +7,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 )
 
-func TestPush(t *testing.T) {
+func TestPushOneValueToEmptyStackLeavesTheStackWithLength1(t *testing.T) {
 	t.Parallel()
 	s := stack.Stack[int]{}
 	s.Push(0)
@@ -16,7 +16,7 @@ func TestPush(t *testing.T) {
 	}
 }
 
-func TestPushPushPopPop(t *testing.T) {
+func TestPushTwiceThenPopTwiceOnEmptyStackLeavesTheStackEmpty(t *testing.T) {
 	t.Parallel()
 	s := stack.Stack[string]{}
 	s.Push("a", "b")
@@ -34,7 +34,7 @@ func TestPushPushPopPop(t *testing.T) {
 	}
 }
 
-func TestPopEmpty(t *testing.T) {
+func TestPopReturnsNotOKOnEmptyStack(t *testing.T) {
 	t.Parallel()
 	s := stack.Stack[int]{}
 	_, ok := s.Pop()

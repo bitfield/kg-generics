@@ -8,7 +8,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 )
 
-func TestPrintAnythingTo(t *testing.T) {
+func TestPrintAnythingTo_PrintsInputToSuppliedWriter(t *testing.T) {
 	t.Parallel()
 	buf := &bytes.Buffer{}
 	print.PrintAnythingTo[string](buf, "Hello, world")

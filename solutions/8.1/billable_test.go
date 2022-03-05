@@ -8,7 +8,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 )
 
-func TestSendReceive(t *testing.T) {
+func TestSendFollowedByReceiveGivesOriginalValue(t *testing.T) {
 	t.Parallel()
 	c := billable.NewChannel[int](1)
 	want := 99
@@ -19,7 +19,7 @@ func TestSendReceive(t *testing.T) {
 	}
 }
 
-func TestSends(t *testing.T) {
+func TestSendsReturns3AfterThreeSendOperations(t *testing.T) {
 	t.Parallel()
 	c := billable.NewChannel[float64](3)
 	c.Send(1.0)
@@ -32,7 +32,7 @@ func TestSends(t *testing.T) {
 	}
 }
 
-func TestReceives(t *testing.T) {
+func TestReceivesReturns2AfterTwoSendOperations(t *testing.T) {
 	t.Parallel()
 	c := billable.NewChannel[struct{}](1)
 	c.Send(struct{}{})
@@ -46,7 +46,7 @@ func TestReceives(t *testing.T) {
 	}
 }
 
-func TestConcurrencySafety(t *testing.T) {
+func TestChannelDoesNotPanicOnManyConcurrentSendsAndReceives(t *testing.T) {
 	t.Parallel()
 	c := billable.NewChannel[string](10)
 	want := 100

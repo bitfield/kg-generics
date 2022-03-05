@@ -9,7 +9,7 @@ import (
 
 type MyInt int
 
-func TestIsPositiveTrueFor1(t *testing.T) {
+func TestIsPositive_IsTrueFor1(t *testing.T) {
 	t.Parallel()
 	input := MyInt(1)
 	want := true
@@ -19,7 +19,7 @@ func TestIsPositiveTrueFor1(t *testing.T) {
 	}
 }
 
-func TestIsPositiveFalseForMinus1(t *testing.T) {
+func TestIsPositive_IsFalseForNegative1(t *testing.T) {
 	t.Parallel()
 	input := MyInt(-1)
 	want := false
@@ -29,7 +29,7 @@ func TestIsPositiveFalseForMinus1(t *testing.T) {
 	}
 }
 
-func TestIsPositiveFalseForZero(t *testing.T) {
+func TestIsPositive_IsFalseForZero(t *testing.T) {
 	t.Parallel()
 	input := MyInt(0)
 	want := false

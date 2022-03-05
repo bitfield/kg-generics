@@ -7,7 +7,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 )
 
-func TestGroupLen(t *testing.T) {
+func TestLenOfGroupIs2WhenItContains2Elements(t *testing.T) {
 	t.Parallel()
 	g := group.Group[int]{1, 2}
 	want := 2

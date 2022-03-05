@@ -8,7 +8,7 @@ import (
 	"github.com/google/go-cmp/cmp/cmpopts"
 )
 
-func TestProductInt(t *testing.T) {
+func TestProductOfInts2And3Is6(t *testing.T) {
 	t.Parallel()
 	want := 6
 	got := product.Product(2, 3)
@@ -17,7 +17,7 @@ func TestProductInt(t *testing.T) {
 	}
 }
 
-func TestProductFloat64(t *testing.T) {
+func TestProductOfFloats1Point6And2Point3Is3Point68(t *testing.T) {
 	t.Parallel()
 	want := 3.68
 	got := product.Product(1.6, 2.3)
@@ -26,7 +26,7 @@ func TestProductFloat64(t *testing.T) {
 	}
 }
 
-func TestProductComplex(t *testing.T) {
+func TestProductOfComplex2Plus3iAnd3Plus2iIs0Plus13i(t *testing.T) {
 	t.Parallel()
 	want := 0 + 13i
 	got := product.Product(2+3i, 3+2i)

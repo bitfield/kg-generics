@@ -19,9 +19,8 @@ There are no exercises for this chapter. You can relax!
 ## 3. Constraints
 
 1. [Stringy beans](exercises/3.1/)
-2. [Pointy-haired boss](exercises/3.2/)
-3. [A first approximation](exercises/3.3/)
-4. [Greater love](exercises/3.4/)
+2. [A first approximation](exercises/3.2/)
+3. [Greater love](exercises/3.3/)
 
 ## 4. Operations
 

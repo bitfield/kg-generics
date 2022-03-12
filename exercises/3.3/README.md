@@ -1,19 +1,21 @@
-# Exercise 3.3: A first approximation
+# Exercise 3.3: Greater love
 
-Here you're provided with a function `IsPositive`, which determines whether a given value is greater than zero, and a set of accompanying tests.
-
-The `IsPositive` function is constrained by some interface `Intish`, and the tests call it with values of the following type:
+You've been given the following (incomplete) function:
 
 ```go
-type MyInt int
+func IsGreater[T /* Your constraint goes here! */](x, y T) bool {
+	return x.Greater(y)
+}
 ```
 
-Your task here is to define the `Intish` interface. A method set won't work, because `int` has no methods. On the other hand, the type literal `int` won't work either, because `MyInt` is not `int`.
+This takes two values of some arbitrary type, and compares them by calling the `Greater` method on the first value, passing it the second value.
 
-What could you use instead?
+The tests exercise this function by calling it with two values of a defined type `MyInt`, which has the required `Greater` method. So to make these tests pass, you'll need to write an appropriate type constraint for `IsGreater`.
 
-If you'd like some clues, have a look at [Solution 3.3](../../solutions/3.3/intish.go).
+Can you see what to do?
+
+You can check your answer against [Solution 3.3](../../3.3/greater.go).
 
 ---
 
-[Index](../../README.md) - [Next](../3.4/)
+[Index](../../README.md) - [Next](../4.1/)

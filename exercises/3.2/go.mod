@@ -1,4 +1,4 @@
-module point
+module intish
 
 go 1.18
 

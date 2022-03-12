@@ -1,4 +1,4 @@
-module intish
+module greater
 
 go 1.18
 

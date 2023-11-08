@@ -14,7 +14,7 @@ The tests exercise this function by calling it with two values of a defined type
 
 Can you see what to do?
 
-You can check your answer against [Solution 3.3](../../3.3/greater.go).
+You can check your answer against [Solution 3.3](../../solutions/3.3/greater.go).
 
 ---
 
